@@ -27,7 +27,7 @@ Télécharge `job-finder.skill` depuis la page [Releases](../../releases) (ou zi
 **Dans Claude Code (plugin)**
 
 ```
-/plugin marketplace add <ton-compte>/job-finder
+/plugin marketplace add VictorHaegeman/job-finder
 /plugin install job-finder@job-finder
 ```
 

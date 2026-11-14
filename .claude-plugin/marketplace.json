@@ -1,6 +1,6 @@
 {
   "name": "job-finder",
-  "owner": { "name": "job-finder contributors" },
+  "owner": { "name": "VictorHaegeman" },
   "plugins": [
     {
       "name": "job-finder",
