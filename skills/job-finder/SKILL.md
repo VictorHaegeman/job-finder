@@ -19,7 +19,7 @@ Les runs planifiés démarrent dans un environnement vide : rien n'est conservé
 
 Commence toujours ainsi :
 
-1. **Vérifie les connecteurs.** Il faut Gmail, Google Drive et Google Sheets. Regarde si des outils correspondants sont disponibles (noms contenant Gmail, Drive, Sheets). S'il en manque un, ne continue pas : explique au candidat lequel manque et pourquoi on en a besoin, puis guide-le pour le connecter (dans Claude : Paramètres → Connecteurs, ou le bouton de connecteurs de la conversation). Si l'hôte propose un outil pour suggérer des connecteurs, utilise-le. Pendant un run planifié sans personne devant l'écran, envoie une notification qui explique le problème et arrête-toi.
+1. **Vérifie les connecteurs.** Il faut Gmail, Google Drive et Google Sheets. Regarde si des outils correspondants sont disponibles (noms contenant Gmail, Drive, Sheets). S'il en manque un, ne continue pas : explique au candidat lequel manque et pourquoi on en a besoin, puis guide-le pour le connecter (dans Claude : Paramètres → Connecteurs, ou le menu des connecteurs de la conversation). Si l'hôte propose un outil pour suggérer des connecteurs, utilise-le. Pendant un run planifié sans personne devant l'écran, envoie une notification qui explique le problème et arrête-toi.
 2. **Cherche le profil** dans Drive (`job-finder-profil.json`, recherche par nom de fichier).
    - **Pas de profil → c'est la première utilisation.** Suis `references/onboarding.md` de bout en bout. Ne lance aucune candidature tant que l'onboarding n'est pas terminé et confirmé.
    - **Profil trouvé → c'est un run.** Télécharge-le, puis suis la section 2.

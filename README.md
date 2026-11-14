@@ -12,26 +12,34 @@ Tu installes le skill, tu dis « lance job-finder », et il te guide : il te dem
 6. écrit un mail court et personnel, avec un fait précis sur l'entreprise, puis **l'envoie** ;
 7. tient tout à jour dans un Google Sheet.
 
-## Ce qu'il te faut
+## Avant de commencer
 
-- Claude (application avec les tâches planifiées, ou Claude Code) avec les connecteurs **Gmail**, **Google Drive** et **Google Sheets**. Le skill te demande de les connecter à la première utilisation et t'explique comment faire.
-- Ton CV (PDF ou Word).
-- 10 à 15 minutes pour la configuration guidée.
+Il te faut :
 
-## Installation
+- **Un compte Claude** (claude.ai ou l'application). Les skills marchent sur tous les plans. Les **tâches planifiées**, qui lancent les runs tout seuls, ne sont pas disponibles partout : vérifie que tu les as dans ton application.
+- **L'option « Créer et modifier des fichiers » activée** (ancien nom : « Code execution and file creation »), dans **Paramètres → Capacités**. Sans elle, aucun skill ne peut fonctionner. Sur un compte Team ou Enterprise, c'est l'administrateur qui l'active.
+- **Un compte Google** : celui d'où partiront les candidatures, donc l'adresse que tu veux montrer aux recruteurs. Il servira pour Gmail, Google Drive et Google Sheets.
+- **Ton CV** en PDF ou Word.
+- **10 à 15 minutes** pour la configuration guidée.
 
-**Dans l'application Claude**
+## Installation (application Claude ou claude.ai)
 
-Télécharge `job-finder.skill` depuis la page [Releases](../../releases) (ou zippe le dossier `skills/job-finder`), puis ajoute-le dans Paramètres → Capacités → Skills, si ton organisation le permet.
+1. Va dans les [Releases](../../releases) et télécharge **`job-finder.zip`**. Ne le dézippe pas.
+2. Dans Claude, ouvre **Personnaliser → Skills** (*Customize → Skills*).
+3. Clique sur **+**, puis **Créer un skill**, puis **Importer un skill** (*Upload a skill*).
+4. Choisis `job-finder.zip`.
+5. Vérifie que **job-finder** apparaît dans la liste et que son interrupteur est **activé**.
 
-**Dans Claude Code (plugin)**
+Si l'import est refusé sur un compte d'organisation, c'est que l'administrateur a désactivé les skills personnels : demande-lui de les autoriser.
+
+### Avec Claude Code (terminal)
 
 ```
 /plugin marketplace add VictorHaegeman/job-finder
 /plugin install job-finder@job-finder
 ```
 
-Ou copie `skills/job-finder` dans `~/.claude/skills/`.
+Ou copie le dossier `skills/job-finder` dans `~/.claude/skills/`. Les connecteurs Gmail, Drive et Sheets doivent alors être configurés comme serveurs MCP dans Claude Code.
 
 ## Première utilisation
 
@@ -69,14 +77,31 @@ Active les notifications push sur la tâche et, si ton compte le permet, l'appro
 - **Pièces jointes vérifiées** dans le brouillon Gmail avant chaque envoi.
 - **Pas de création de compte, pas de contournement de captcha, pas de fausse information** dans les formulaires.
 
-Tu peux passer en mode « brouillons à valider » à tout moment : « job-finder, passe en mode brouillons ».
-
 ## Commandes utiles
 
 - « job-finder, où j'en suis ? » : bilan des candidatures et des réponses.
 - « job-finder, ajoute Bordeaux à ma zone » : modifie le profil.
-- « job-finder, j'ai trouvé mon stage » : met la campagne en pause.
+- « job-finder, passe en mode brouillons » : les mails ne partent plus seuls, tu les valides dans Gmail.
 - « job-finder, 20 envois par run » : modifie le rythme (évite de dépasser une quarantaine par jour).
+- « job-finder, j'ai trouvé mon stage » : met la campagne en pause.
+
+## Arrêter complètement
+
+1. Dis « job-finder, j'ai trouvé » (ou « mets en pause ») : les prochains runs s'arrêtent tout de suite.
+2. Supprime ou désactive la tâche planifiée dans l'application Claude.
+3. Si tu veux, désactive le skill dans **Personnaliser → Skills**. Ton Sheet et tes PDF restent dans ton Drive.
+
+## Problèmes fréquents
+
+| Problème | Solution |
+|---|---|
+| Claude ne lance pas le skill | Vérifie que job-finder est activé dans Personnaliser → Skills et que « Créer et modifier des fichiers » est activé. Écris « utilise le skill job-finder ». |
+| « Il manque le connecteur Gmail / Drive / Sheets » | Paramètres → Connecteurs → connecte le service avec le bon compte Google, puis relance. |
+| Les runs planifiés ne font rien ou restent bloqués | La tâche attend une approbation : ouvre la tâche et active l'approbation automatique (*Automatically approve*), si ton compte le permet. |
+| Pas de notification sur le téléphone | Active les notifications de l'application Claude dans les réglages du téléphone, et les notifications de la tâche planifiée. |
+| Gmail refuse les envois | Limite d'envoi atteinte ou compte à vérifier : attends 24 h, baisse le nombre d'envois par run et vérifie ta boîte Gmail. |
+| Une entreprise a répondu | C'est **toi** qui réponds, depuis Gmail. Le skill ne répond jamais à ta place ; il note la réponse dans le Sheet. |
+| Le CV généré contient une erreur | Dis « job-finder, corrige mon profil : … ». Le profil est mis à jour pour les envois suivants. |
 
 ## Structure
 
