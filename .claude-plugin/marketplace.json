@@ -1,0 +1,11 @@
+{
+  "name": "job-finder",
+  "owner": { "name": "job-finder contributors" },
+  "plugins": [
+    {
+      "name": "job-finder",
+      "source": "./",
+      "description": "Recherche de stage / alternance / emploi automatisée avec Gmail, Drive et Sheets."
+    }
+  ]
+}

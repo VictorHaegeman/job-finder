@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+jobs/
+*.pdf
+profil.json
+job-finder-profil.json
+.DS_Store
+dist/

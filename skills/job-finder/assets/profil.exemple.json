@@ -1,0 +1,70 @@
+{
+  "_commentaire": "Profil FICTIF d'exemple. Le vrai profil est construit pendant l'onboarding et stocké dans le dossier Drive du candidat (job-finder-profil.json).",
+  "version": 1,
+  "identite": {
+    "prenom": "Camille",
+    "nom": "Martin",
+    "telephone": "+33 6 00 00 00 00",
+    "email": "camille.martin@example.com",
+    "ville": "Lyon (69)",
+    "ville_lettre": "Lyon",
+    "mobilite": "Permis B",
+    "liens": [
+      {"label": "linkedin.com/in/camille-martin-exemple", "url": "https://www.linkedin.com/in/camille-martin-exemple/"},
+      {"label": "github.com/camille-exemple", "url": "https://github.com/camille-exemple"}
+    ]
+  },
+  "accroche_entete": "Étudiante en 4e année d'école d'ingénieurs – spécialité data",
+  "recherche": {
+    "type": "stage",
+    "domaines": ["data / BI", "développement logiciel"],
+    "duree": "6 mois",
+    "debut": "2 février 2027",
+    "debut_au_plus_tard": "mi-mars 2027",
+    "zone": "Lyon et métropole (69)",
+    "ecole": "École d'ingénieurs Exemple",
+    "convention": "convention de stage délivrée par l'École d'ingénieurs Exemple",
+    "niveau": "bac+4",
+    "exclusions": ["alternance", "CDI", "offres bac+5 uniquement"],
+    "part_pme": 0.7,
+    "langue_mails": "fr"
+  },
+  "cv": {
+    "formation": [
+      "École d'ingénieurs Exemple, Lyon | 2024 – 2027 : cycle ingénieur, spécialité data : bases de données, statistiques, machine learning, gestion de projet.",
+      "Classe préparatoire MPSI / MP, Lyon | 2022 – 2024."
+    ],
+    "experiences": [
+      "Équipière – Restaurant Exemple, Lyon | Étés 2023 et 2024 : service en salle, encaissement, gestion des stocks en fin de journée.",
+      "Bénévole – Association sportive Exemple | 2022 – 2025 : tenue du site web et des inscriptions des adhérents."
+    ],
+    "competences_cles": {
+      "data": "Data : Python, Pandas, SQL – nettoyage, analyse et visualisation de données",
+      "dev": "Développement : Python, Java, HTML/CSS – projets en équipe avec Git",
+      "gp": "Gestion de projet : projets d'équipe de 4 à 6 personnes, découpage et suivi des tâches",
+      "langues": "Langues : anglais B2 (TOEIC 880), espagnol B1"
+    },
+    "projets": {
+      "dashboard": "Projet école – Tableau de bord de fréquentation d'une bibliothèque : collecte des données, nettoyage en Python, visualisation.",
+      "appli": "Projet personnel – Application web de covoiturage étudiant : conception de la base de données et des pages principales."
+    },
+    "competences_techniques": "Langages : Python, Java, SQL, HTML, CSS  |  Outils : Git, GitHub, VS Code, Excel",
+    "langues_interets": "Langues : Anglais B2, Espagnol B1, Français natif   |   Centres d'intérêt : escalade, photographie"
+  },
+  "non_maitrise": ["C++", "React", "Kubernetes", "AWS", "Power BI", "Looker", "SAP", "Salesforce"],
+  "mot_temoin_cv": "encaissement",
+  "mot_temoin_lm": "distinguées",
+  "signature_mail": "Camille Martin\nÉtudiante en 4e année – École d'ingénieurs Exemple\n+33 6 00 00 00 00\nlinkedin.com/in/camille-martin-exemple",
+  "envoi": {
+    "mode": "auto",
+    "par_run": 12,
+    "minimum_par_run": 8,
+    "fin_campagne": "2027-03-15"
+  },
+  "suivi": {
+    "dossier_drive_id": "",
+    "sheet_id": "",
+    "libelle_gmail": "Job Finder – candidatures",
+    "libelle_gmail_id": ""
+  }
+}

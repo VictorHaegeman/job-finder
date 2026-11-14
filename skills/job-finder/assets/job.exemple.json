@@ -1,0 +1,22 @@
+{
+  "slug": "Exemple_SAS_data_BI",
+  "company": "Exemple SAS",
+  "email": "contact@exemple-sas.fr",
+  "email_note": "contact générique trouvé sur https://www.exemple-sas.fr/contact",
+  "city": "Lyon (69)",
+  "url": "https://www.exemple-sas.fr/",
+  "taille": "PME ~40",
+  "domaine": "data / BI",
+  "fait_precis": "Éditeur d'un logiciel de planification pour les cliniques vétérinaires, 300 cliniques clientes.",
+  "cv_title": "Stage data / BI – 6 mois – disponible dès février 2027",
+  "cv_profile": "Étudiante en 4e année d'école d'ingénieurs (spécialité data). Je cherche un stage de 6 mois dans une équipe produit qui exploite ses données pour mieux servir ses clients.",
+  "cv_skills": ["data", "dev", "gp", "langues"],
+  "cv_projects": ["dashboard", "appli"],
+  "lm_dest": ["Exemple SAS", "Service recrutement", "Lyon"],
+  "date_fr": "14 novembre 2026",
+  "lm_objet": "Candidature spontanée – stage data / BI de 6 mois, à partir de février 2027",
+  "body": "Madame, Monsieur,\n\nPremier paragraphe : pourquoi cette entreprise, avec le fait précis trouvé sur son site.\n\nDeuxième paragraphe : ce que j'ai déjà fait qui sert ce poste, et ce que je ne sais pas encore faire.\n\nTroisième paragraphe : dates, durée, convention, disponibilité pour un échange.",
+  "lm_closing": "Je vous remercie de l'attention portée à ma candidature et vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.",
+  "subject": "Candidature spontanée stage data / BI – Camille Martin (6 mois dès février 2027)",
+  "mail_body": "Bonjour,\n\n...\n\nCordialement,\n\nCamille Martin\n..."
+}
