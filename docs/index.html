@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>job-finder : skill Claude pour trouver un stage ou une alternance</title>
+<meta name="description" content="Skill Claude gratuit qui automatise ta recherche de stage, d'alternance ou d'emploi : CV et lettre de motivation adaptés à chaque entreprise, envoi depuis Gmail, suivi dans Google Sheets.">
+<link rel="canonical" href="https://victorhaegeman.github.io/job-finder/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="job-finder : skill Claude pour trouver un stage ou une alternance">
+<meta property="og:description" content="CV et lettre adaptés à chaque entreprise, envoyés depuis ton Gmail, suivis dans Google Sheets. Gratuit et open source.">
+<meta property="og:url" content="https://victorhaegeman.github.io/job-finder/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "job-finder",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Claude (app, claude.ai, Claude Code)",
+  "description": "Skill Claude qui automatise la recherche de stage, d'alternance ou d'emploi : CV et lettre de motivation adaptés à chaque entreprise, envoi depuis Gmail, suivi Google Sheets, alerte quand un recruteur répond.",
+  "inLanguage": "fr",
+  "license": "https://opensource.org/licenses/MIT",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "author": { "@type": "Person", "name": "Victor Haegeman", "url": "https://github.com/VictorHaegeman" },
+  "downloadUrl": "https://github.com/VictorHaegeman/job-finder/releases/latest",
+  "codeRepository": "https://github.com/VictorHaegeman/job-finder"
+}
+</script>
+<style>
+  :root { --bg:#fafafa; --card:#fff; --raised:#f4f4f5; --t1:#171717; --t2:#525252; --t3:#737373; --line:rgba(23,23,23,.08); --accent:#1d4ed8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--t1); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:64px 24px 96px; }
+  h1 { font-size:40px; line-height:1.1; font-weight:500; letter-spacing:-.02em; margin:0 0 16px; }
+  h2 { font-size:22px; font-weight:500; margin:48px 0 12px; }
+  p, li { color:var(--t2); }
+  .lead { font-size:19px; margin:0 0 32px; }
+  .actions { display:flex; gap:12px; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:12px 20px; border-radius:10px; text-decoration:none; font-weight:500; transition:background-color .15s cubic-bezier(.22,1,.36,1); }
+  .primary { background:var(--t1); color:#fff; }
+  .primary:hover { background:#333; }
+  .secondary { background:var(--card); color:var(--t1); border:1px solid var(--line); }
+  .secondary:hover { background:var(--raised); }
+  ol, ul { padding-left:20px; }
+  li { margin:6px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 24px; margin-top:16px; }
+  .card h3 { font-size:16px; font-weight:500; margin:0 0 4px; color:var(--t1); }
+  .card p { margin:0; }
+  code { background:var(--raised); padding:2px 6px; border-radius:6px; font-size:14px; }
+  footer { margin-top:64px; font-size:14px; color:var(--t3); }
+  a { color:var(--accent); }
+  @media (max-width:600px) { h1 { font-size:32px; } main { padding-top:40px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Trouve ton stage ou ton alternance avec Claude</h1>
+  <p class="lead">job-finder est un skill Claude gratuit. Il cherche des entreprises, écrit un CV et une lettre adaptés à chacune, les envoie depuis ton Gmail et te prévient quand un recruteur répond.</p>
+  <div class="actions">
+    <a class="btn primary" href="https://github.com/VictorHaegeman/job-finder/releases/latest">Télécharger le skill</a>
+    <a class="btn secondary" href="https://github.com/VictorHaegeman/job-finder">Voir sur GitHub</a>
+  </div>
+
+  <h2>Ce qu'il fait à chaque run</h2>
+  <ol>
+    <li>Il regarde si une entreprise t'a répondu et t'envoie une notification.</li>
+    <li>Il cherche des offres de stage, d'alternance ou d'emploi qui collent à ton profil.</li>
+    <li>Il trouve des entreprises pour des candidatures spontanées, surtout des PME.</li>
+    <li>Il vérifie l'adresse email sur le site officiel de l'entreprise.</li>
+    <li>Il génère un CV et une lettre de motivation d'une page, adaptés à l'entreprise.</li>
+    <li>Il envoie un mail court et personnel depuis ton Gmail.</li>
+    <li>Il met à jour ton suivi dans Google Sheets.</li>
+  </ol>
+
+  <h2>Les règles qu'il respecte</h2>
+  <div class="card"><h3>Rien d'inventé</h3><p>Aucune compétence absente de ton vrai CV, aucune adresse email devinée.</p></div>
+  <div class="card"><h3>Une seule prise de contact</h3><p>Jamais de relance automatique, jamais de réponse aux recruteurs à ta place.</p></div>
+  <div class="card"><h3>Tes données restent chez toi</h3><p>Profil, CV et suivi sont stockés dans ton propre Google Drive.</p></div>
+
+  <h2>Installation</h2>
+  <p>Dans l'application Claude : <strong>Personnaliser → Skills → Importer un skill</strong>, puis choisis <code>job-finder.zip</code>. Écris ensuite « Lance job-finder, je cherche un stage » et laisse-toi guider (10 à 15 minutes).</p>
+  <p>Avec Claude Code : <code>/plugin marketplace add VictorHaegeman/job-finder</code></p>
+
+  <h2>Questions fréquentes</h2>
+  <p><strong>C'est gratuit ?</strong> Oui, licence MIT. Il faut un compte Claude et un compte Google.</p>
+  <p><strong>Ça marche pour l'alternance ?</strong> Oui : stage, alternance, CDI ou premier emploi.</p>
+  <p><strong>Je peux relire avant l'envoi ?</strong> Oui, avec le mode brouillons : tu valides chaque mail dans Gmail.</p>
+
+  <footer>job-finder, par <a href="https://github.com/VictorHaegeman">Victor Haegeman</a>. Licence MIT.</footer>
+</main>
+</body>
+</html>
