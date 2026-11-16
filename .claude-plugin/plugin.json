@@ -2,6 +2,12 @@
   "name": "job-finder",
   "version": "1.0.0",
   "description": "Recherche de stage / alternance / emploi automatisée : candidatures spontanées et offres, CV + lettre adaptés à chaque entreprise, envoi depuis Gmail, suivi Google Sheets, alertes quand un recruteur répond.",
+  "author": {
+    "name": "Victor Haegeman",
+    "url": "https://github.com/VictorHaegeman"
+  },
+  "homepage": "https://victorhaegeman.github.io/job-finder/",
+  "repository": "https://github.com/VictorHaegeman/job-finder",
   "license": "MIT",
-  "keywords": ["stage", "alternance", "emploi", "candidature", "cv", "lettre de motivation", "gmail", "job search"]
+  "keywords": ["stage", "alternance", "emploi", "candidature", "cv", "lettre de motivation", "candidature spontanée", "gmail", "google sheets", "job search", "internship", "resume", "cover letter", "job application", "claude skill"]
 }
