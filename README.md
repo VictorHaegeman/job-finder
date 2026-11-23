@@ -1,6 +1,12 @@
-# job-finder
+# job-finder : skill Claude pour trouver un stage, une alternance ou un emploi
+
+[![Release](https://img.shields.io/github/v/release/VictorHaegeman/job-finder?label=t%C3%A9l%C3%A9charger)](https://github.com/VictorHaegeman/job-finder/releases/latest)
+[![Licence MIT](https://img.shields.io/badge/licence-MIT-111111)](LICENSE)
+[![Claude Skill](https://img.shields.io/badge/Claude-skill-111111)](https://github.com/topics/claude-skills)
 
 **Un skill Claude qui fait ta recherche de stage, d'alternance ou de premier emploi à ta place, en envoyant de vraies candidatures depuis ton Gmail.**
+
+*In English: a Claude skill (SKILL.md, works in the Claude app and Claude Code) that automates an internship or job search. It finds companies and job offers, verifies contact emails on official websites, writes a tailored one-page CV and cover letter for each company, sends the application from your Gmail, tracks everything in Google Sheets and notifies you when a recruiter replies. Built for the French market (stage, alternance, candidature spontanée). [Jump to English section](#in-english).*
 
 Tu installes le skill, tu dis « lance job-finder », et il te guide : il te demande ton CV et ce que tu cherches, prépare ton suivi, puis active des runs automatiques. À chaque run, il :
 
@@ -121,6 +127,30 @@ Tes données (profil, CV, suivi) restent dans **ton** Google Drive. Le dépôt n
 ## Avertissement
 
 Ce skill envoie de vrais emails en ton nom. Relis ton profil et tes premiers envois, et garde un rythme raisonnable. Tu restes responsable de ce qui est envoyé depuis ton compte.
+
+## Questions fréquentes
+
+**C'est gratuit ?** Oui, le skill est libre (licence MIT). Il te faut seulement un compte Claude et un compte Google.
+
+**Ça marche pour l'alternance ?** Oui : stage, alternance, CDI ou premier emploi. Tu choisis le type de contrat pendant la configuration.
+
+**Est-ce que ça invente des compétences ?** Non. Chaque CV est vérifié avant l'envoi : rien n'y apparaît qui ne soit pas dans ton vrai CV.
+
+**Je peux relire avant que ça parte ?** Oui : dis « job-finder, passe en mode brouillons » et tu valides chaque mail dans Gmail.
+
+## In English
+
+job-finder is a Claude skill that runs your internship or job search for you and sends real applications from your own Gmail account. On each scheduled run it:
+
+1. checks whether a company replied and notifies you (interview, test, document request);
+2. searches for published job offers that match your profile;
+3. finds relevant companies for unsolicited applications (about 70% small and mid-sized companies);
+4. verifies each contact email **on the company's official website** (never a guessed address);
+5. generates a **one-page CV and cover letter tailored to each company**, with nothing that is not in your real CV;
+6. writes a short, personal email with one specific fact about the company, then sends it;
+7. keeps a Google Sheet up to date.
+
+The skill and its output are in French and tuned for the French job market. Install it from the [latest release](https://github.com/VictorHaegeman/job-finder/releases/latest) (Claude app: Customize → Skills → Upload a skill) or in Claude Code with `/plugin marketplace add VictorHaegeman/job-finder`.
 
 ## Licence
 
